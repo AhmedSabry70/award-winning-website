@@ -1,5 +1,5 @@
 
-![Project Screenshot](docs/screenshot.png)
+![Project Screenshot](docs/screenshot-main.png)
 
 # Award Winning Website
 
