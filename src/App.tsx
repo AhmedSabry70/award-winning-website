@@ -1,4 +1,10 @@
+import About from "./components/About"
+import Contact from "./components/Contact"
+import Features from "./components/Features"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
+import Story from "./components/Story"
 
 
 function App() {
@@ -6,10 +12,13 @@ function App() {
   return (
     <main className="relative min-h-screen w-screen overflow-x-hidden">
       <Navbar />
-     <section className="min-h-dvh w-screen bg-violet-300/50"/>
-     <section className="min-h-dvh w-screen bg-blue-300/20"/>
-    
-     <section className="min-h-dvh w-screen bg-purple-300/20"/>
+      <Hero />
+      <About />
+      <Features />
+      <Story />
+      <Contact />
+      <Footer />
+     
     </main>
   )
 }

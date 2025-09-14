@@ -1,50 +1,90 @@
-# React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Project Screenshot](docs/screenshot.png)
 
-Currently, two official plugins are available:
+# Award Winning Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Overview
+A visually stunning, modern React + Vite website built for high performance and creative impact. Designed and developed by **Ahmed Sabry** (mrsabry134@gmail.com).
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## ✨ Features
+- Responsive, mobile-first design
+- Advanced animations with GSAP
+- Bento grid layout for feature highlights
+- Custom hooks and utility functions
+- Modern navigation and footer
+- Contact and About sections
+- Gallery and video hero sections
+- Tailwind CSS for rapid styling
+- Clean, maintainable codebase
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Technologies Used
+- React 18
+- Vite
+- TypeScript
+- Tailwind CSS
+- GSAP & @gsap/react
+- React Icons
+- ESLint & Prettier
+
+---
+
+## 📁 Project Structure
+```
+src/
+  components/
+  constants/
+  hooks/
+  lib/
+  types/
+public/
+  img/
+  audio/
+  fonts/
+  videos/
+docs/
+  screenshot.png
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📸 Screenshots
+![home](/docs/screenshot-home.png)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 👤 Author
+**Ahmed Sabry**  
+Email: mrsabry134@gmail.com
+
+---
+
+## 📄 License
+This project is open source and available under the MIT License.
+
+---
+
+## 📝 Getting Started
+1. Install dependencies: `pnpm install`
+2. Start development server: `pnpm dev`
+3. Build for production: `pnpm build`
+
+---
+
+## 💡 Contributing
+Pull requests and suggestions are welcome!
+
+---
+
+## 🌐 Live Demo
+Add your live demo link here if available.
+
+---
+
+## 🏆 Award Winning Quality
+Built for creativity, speed, and scalability.

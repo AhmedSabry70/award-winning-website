@@ -2,9 +2,9 @@ import { TiLocationArrow } from "react-icons/ti";
 import Button from "./Button";
 import { navLinks } from "../constants";
 import { useEffect, useRef, useState } from "react";
-import clsx from "clsx";
 import useWindowScroll from "../hooks/useWindowScroll";
 import gsap from "gsap";
+import { cn } from "../lib/utils";
 
 const Navbar = () => {
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
@@ -54,7 +54,7 @@ const Navbar = () => {
   return (
     <div
       ref={navElementRef}
-      className="fixed inset-x-0 sm:inset-x-6 top-4 h-16 border-none transition-all duration-700 z-50"
+      className="fixed inset-x-0 sm:inset-x-6 top-4 h-16 border-none transition-all duration-700 z-50 backdrop-blur-[5px] bg-gradient-to-br from-transport via-transparent  to-white/15"
     >
       <header className="absolute top-1/2 w-full -translate-y-1/2">
         <nav className="size-full flex items-center justify-between p-4">
@@ -92,7 +92,7 @@ const Navbar = () => {
               {[1, 2, 3, 4].map((bar) => (
                 <div
                   key={bar}
-                  className={clsx("indicator-line", {
+                  className={cn("indicator-line", {
                     active: isIndicatorActive,
                   })}
                   style={{
