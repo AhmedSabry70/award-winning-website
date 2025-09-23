@@ -1,5 +1,4 @@
 import { ElementType, MouseEvent, ReactNode, useRef, useState } from "react";
-import BentoGridV1 from "./BentoGridV1";
 import { features_cards } from "../constants";
 
 import { TiLocationArrow } from "react-icons/ti";
